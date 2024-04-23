@@ -1,0 +1,153 @@
+.nav-wrapper {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(50px);
+}
+
+.nav-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 18rem;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 4rem;
+  height: auto;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  filter: drop-shadow(0px 1px 1px #a892fe);
+  cursor: pointer;
+}
+
+.nav-content ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5px;
+  list-style: none;
+}
+
+.nav-content li {
+  margin: 0 1.5rem;
+}
+
+
+
+.menu-item {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-item:before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contact-btn {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  color: #e993fe;
+  background: black;
+  outline: 1.5px solid #e993fe;
+}
+
+.menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+  display: none;
+}
+
+.menu-btn:hover {
+  color: #a993fe;
+  background: black;
+  border: 1px solid #a993fe;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: flex;
+  }
+  .nav-content ul {
+    display: none;
+  }
+  .contact-btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav-wrapper {
+    padding: 0;
+  }
+  .nav-content {
+    display: flex;
+    width: 100%;
+    padding: 1rem 6rem;
+  }
+}
+
+@media (max-width: 1740px) {
+  .nav-wrapper {
+    padding: 0;
+  }
+  .nav-content {
+    display: flex;
+    width: 100%;
+    padding: 1rem 4rem;
+  }
+}
+
