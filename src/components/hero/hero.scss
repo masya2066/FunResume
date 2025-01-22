@@ -36,12 +36,12 @@
   justify-content: center;
   border-radius: 15%;
   margin-bottom: 2rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 1s ease, opacity 0.3s ease;
 }
 
 .avatarImg:hover {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: translateY(-0.8rem);
+  transition: transform 1s ease, opacity 0.3s ease;
+  transform: translateY(-0.1rem);
 }
 
 .hero-container::before {
@@ -108,12 +108,12 @@
 .tech-icon span {
   width: 5rem;
   height: 4.7rem;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .tech-icon:hover {
-  transition: all 0.3s ease;
-  transform: translateY(-1rem) scale(1.2);
+  transition: all 1s ease;
+  transform: translateY(-0.1rem) scale(1.01);
   opacity: 0.9;
 }
 
@@ -123,7 +123,7 @@
 
 .tech-icon img:hover {
   transition: all 0.8s ease;
-  transform: translateY(-1.5rem);
+  transform: translateY(-0.1rem);
   opacity: 0.9;
 }
 

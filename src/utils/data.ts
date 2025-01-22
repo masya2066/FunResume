@@ -28,20 +28,20 @@ export const SKILLS = [
         title: "Frontend",
         icon: frontend,
         skills: [
-            {skill: "React", percentage: "55%"},
-            {skill: "React Native", percentage: "67%"},
-            {skill: "HTML5", percentage: "75%"},
-            {skill: "CSS/SCSS", percentage: "43%"},
+            {skill: "React", percentage: "93%"},
+            {skill: "React Native", percentage: "56%"},
+            {skill: "HTML5", percentage: "100%"},
+            {skill: "CSS/SCSS", percentage: "97%"},
         ]
     },
     {
         title: "Backend",
         icon: backend,
         skills: [
-            {skill: "Golang", percentage: "56%"},
-            {skill: "MySQL/PostgreSQL", percentage: "58%"},
+            {skill: "Golang", percentage: "93%"},
+            {skill: "MySQL/PostgreSQL", percentage: "68%"},
             {skill: "Nginx", percentage: "83%"},
-            {skill: "Linux", percentage: "69%"},
+            {skill: "Linux", percentage: "76%"},
         ]
     }
 ]
